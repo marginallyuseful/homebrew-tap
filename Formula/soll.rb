@@ -1,28 +1,22 @@
 class Soll < Formula
   desc "Static import graph analyzer"
   homepage "https://github.com/marginallyuseful/soll"
-  version "6"
+  version "7"
   license :cannot_represent
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/marginallyuseful/soll/releases/download/6/soll-darwin-arm64-sha256.txt"
-      sha256 "Not"
-    end
-    if Hardware::CPU.intel?
-      url "undefined"
-      sha256 "undefined"
-    end
+    url "https://github.com/marginallyuseful/homebrew-tap/releases/download/7/soll-macos-arm64"
+    sha256 "e136adc28302c0a4736b62241b2fe3af7567b43e6e7b8680fab19a6eef2a5afd"
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/marginallyuseful/soll/releases/download/6/soll-linux-arm64-gnu-sha256.txt"
-      sha256 "Not"
+      url "https://github.com/marginallyuseful/homebrew-tap/releases/download/7/soll-linux-arm64"
+      sha256 "dc8f3aa48665607fe6114bece7855aa97bf11fd5530a1eed88295934bc76598b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/marginallyuseful/soll/releases/download/6/soll-linux-x64-gnu-sha256.txt"
-      sha256 "Not"
+      url "https://github.com/marginallyuseful/homebrew-tap/releases/download/7/soll-linux-x64"
+      sha256 "6d34ec2d4a816ae7d2fa78cdb67085e70a6069d13b26bb1e647c522d6a7bb3a4"
     end
   end
 
