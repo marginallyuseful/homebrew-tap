@@ -1,22 +1,22 @@
 class Soll < Formula
   desc "Static import graph analyzer"
   homepage "https://github.com/marginallyuseful/soll"
-  version "soll-0.0.1-f2d02297"
+  version "soll-0.0.1-2095ee31"
   license :cannot_represent
 
   on_macos do
-    url "https://github.com/marginallyuseful/homebrew-tap/releases/download/soll-0.0.1-f2d02297/soll-macos-arm64"
-    sha256 "b6a1021281e918b67b8d111b982c00c4ea0c7c44f91d7679703f3136a84aa152"
+    url "https://github.com/marginallyuseful/homebrew-tap/releases/download/soll-0.0.1-2095ee31/soll-macos-arm64"
+    sha256 "6a3131ba8d600804bf52f6b696e915b05bafe45e3c9cf3cfff7284cbfa06a70a"
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/marginallyuseful/homebrew-tap/releases/download/soll-0.0.1-f2d02297/soll-linux-arm64"
-      sha256 "443f53eb9d1f2761bc5ba8e8304578b59748db621cc6dec6d37805884e0a839d"
+      url "https://github.com/marginallyuseful/homebrew-tap/releases/download/soll-0.0.1-2095ee31/soll-linux-arm64"
+      sha256 "a90b435ad73e6728199e8f7004deb71119ee3d193693d6a36ddaf9f761ea041f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/marginallyuseful/homebrew-tap/releases/download/soll-0.0.1-f2d02297/soll-linux-x64"
-      sha256 "74c8a69f047fbdfdb1df812dc652a42d38316691663dc602b52099aa6001047c"
+      url "https://github.com/marginallyuseful/homebrew-tap/releases/download/soll-0.0.1-2095ee31/soll-linux-x64"
+      sha256 "2ae5c03aefa6f0c504b0b8c349316bb8ec208bbd059b5885aae998fed79347c8"
     end
   end
 
